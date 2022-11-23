@@ -4,15 +4,21 @@ using namespace std;
 int main() {
 
     int tamanho;
+    int soma = 0;
+    int contador = 0; 
+
+    float media = soma / tamanho; 
+
+     int notas[tamanho]; 
 
     cout << "How many scores you want to type?" << endl;
     cin >> tamanho;
 
-    float notas[tamanho]; 
 
     cout << "Now type the scores" << endl;
     for (int i=0; i < tamanho; i++){
         cin >> notas[i];
+        soma += notas[i];
     }
 
     cout << "You typed: ";
